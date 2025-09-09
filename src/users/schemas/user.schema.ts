@@ -1,4 +1,5 @@
 import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
+import { HydratedDocument } from "mongoose";
 
 /**
  * CIRCULAR NOTE:
@@ -16,7 +17,7 @@ import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
  * automatically track createdAt and updatedAt fields.
  */
 
-export type UserDocument = Document & User;
+export type UserDocument = HydratedDocument<User>;
 
 @Schema({ _id: false })
 export class Address{
