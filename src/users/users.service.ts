@@ -3,9 +3,8 @@ import { User, UserDocument } from './schemas/user.schema';
 import { InjectModel } from '@nestjs/mongoose';
 import { CreateUserDto } from './dto/create-user.dto';
 import { Model } from 'mongoose';
-import { NotFoundError } from 'rxjs';
 import { UpdateUserDto } from './dto/update-user.dto';
-
+import bcrypt from 'node_modules/bcryptjs';
 @Injectable()
 export class UsersService {
     constructor(@InjectModel(User.name) private userModel: Model<UserDocument>){}
@@ -16,9 +15,21 @@ export class UsersService {
     // Tuy nhiên, nên khai báo rõ ràng kiểu trả về để code dễ hiểu và kiểm soát tốt hơn.
     // Nếu bạn bỏ Promise<UserDocument> và chỉ để : UserDocument thì sẽ bị sai vì async luôn trả về Promise.
     async create(createUserDto: CreateUserDto): Promise<UserDocument> {
-        const createUser= new this.userModel(createUserDto);
+        // Băm mật khẩu trước khi lưu user mới
+        const salt = await bcrypt.genSalt();
+        const hashedPassword = await bcrypt.hash(createUserDto.password, salt);
+
+        // Khởi tạo document với dữ liệu đầy đủ, sau đó gọi save() không truyền dữ liệu
+        const createUser = new this.userModel({
+          ...createUserDto,
+          password: hashedPassword,
+          // role: 'customer'
+        });
+
         return createUser.save();
+        
     }
+    
 
 
     async findAll(): Promise<UserDocument[]>{

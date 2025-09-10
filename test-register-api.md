@@ -41,7 +41,7 @@
       "city": "Hà Nội",
       "state": "Hà Nội",
       "postalCode": "100000",
-      "country": "Việt Nam",
+      "country": "ViệtP
       "isDefault": false
     }
   ],
