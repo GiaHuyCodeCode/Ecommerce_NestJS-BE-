@@ -66,6 +66,6 @@ export class User{
     addresses: Address[];
 
     @Prop({enum: ['customer','admin','vendor'], default:'customer'})
-    role: string;
+    role?: string;
 }
 export const UserSchema= SchemaFactory.createForClass(User)

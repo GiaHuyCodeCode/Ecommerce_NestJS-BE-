@@ -34,10 +34,12 @@ export class CreateUserDto {
   @IsString()  
   password: string;  
   
-  @IsString()  
+  @IsString()
+  @IsOptional()  
   firstName: string;  
   
-  @IsString()  
+  @IsString()
+  @IsOptional() 
   lastName: string;  
   
   @IsString()  

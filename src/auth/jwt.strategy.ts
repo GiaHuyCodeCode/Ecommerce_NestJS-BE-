@@ -15,7 +15,7 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
     // - secretOrKey: lấy secret key từ biến môi trường để xác thực JWT
     super({  
       jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),  
-      ignoreExpiration: false,  
+      ignoreExpiration: false,
       secretOrKey: configService.get<string>('JWT_SECRET') || (() => {
         throw new Error('JWT_SECRET environment variable is not defined');
       })(),  

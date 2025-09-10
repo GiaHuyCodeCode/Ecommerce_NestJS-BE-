@@ -1,4 +1,4 @@
-// src/products/categories.controller.ts  
+// src/orders/orders.controller.ts  
 import {   
   Controller,   
   Get,   
@@ -7,47 +7,62 @@ import {
   Patch,   
   Param,   
   Delete,   
-  UseGuards   
+  UseGuards,   
+  Request   
 } from '@nestjs/common';  
-import { CategoriesService } from './categories.service';  
-import { CreateCategoryDto } from './dto/create-category.dto';  
-import { UpdateCategoryDto } from './dto/update-category.dto';  
+import { OrdersService } from './orders.service';  
+import { CreateOrderDto } from './dto/create-order.dto';  
+import { UpdateOrderDto } from './dto/update-order.dto';  
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';  
-import { RolesGuard } from '../common/guards/roles.guard';  
-import { Roles } from '../common/decorators/roles.decorator';  
-  
-@Controller('categories')  
-export class CategoriesController {  
-  constructor(private readonly categoriesService: CategoriesService) {}  
+import { RolesGuard } from 'src/common/guards/roles/roles.guard';
+import { Roles } from 'src/common/decorators/roles/roles.decorator';
+
+@Controller('orders')  
+export class OrdersController {  
+  constructor(private readonly ordersService: OrdersService) {}  
   
   @Post()  
-  @UseGuards(JwtAuthGuard, RolesGuard)  
-  @Roles('admin')  
-  create(@Body() createCategoryDto: CreateCategoryDto) {  
-    return this.categoriesService.create(createCategoryDto);  
+  @UseGuards(JwtAuthGuard)  
+  create(@Request() req, @Body() createOrderDto: CreateOrderDto) {  
+    return this.ordersService.create(req.user.userId, createOrderDto);  
   }  
   
   @Get()  
+  @UseGuards(JwtAuthGuard, RolesGuard)  
+  @Roles('admin')  
   findAll() {  
-    return this.categoriesService.findAll();  
+    return this.ordersService.findAll();  
+  }  
+  
+  @Get('my-orders')  
+  @UseGuards(JwtAuthGuard)  
+  findMyOrders(@Request() req) {  
+    return this.ordersService.findByUser(req.user.userId);  
   }  
   
   @Get(':id')  
-  findOne(@Param('id') id: string) {  
-    return this.categoriesService.findOne(id);  
+  @UseGuards(JwtAuthGuard)  
+  findOne(@Request() req, @Param('id') id: string) {  
+    return this.ordersService.findOne(id, req.user);  
   }  
   
   @Patch(':id')  
   @UseGuards(JwtAuthGuard, RolesGuard)  
   @Roles('admin')  
-  update(@Param('id') id: string, @Body() updateCategoryDto: UpdateCategoryDto) {  
-    return this.categoriesService.update(id, updateCategoryDto);  
+  update(@Param('id') id: string, @Body() updateOrderDto: UpdateOrderDto) {  
+    return this.ordersService.update(id, updateOrderDto);  
+  }  
+  
+  @Patch(':id/cancel')  
+  @UseGuards(JwtAuthGuard)  
+  cancelOrder(@Request() req, @Param('id') id: string) {  
+    return this.ordersService.cancelOrder(id, req.user);  
   }  
   
   @Delete(':id')  
   @UseGuards(JwtAuthGuard, RolesGuard)  
   @Roles('admin')  
   remove(@Param('id') id: string) {  
-    return this.categoriesService.remove(id);  
+    return this.ordersService.remove(id);  
   }  
 }  
