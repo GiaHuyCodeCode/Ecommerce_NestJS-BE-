@@ -1,0 +1,1013 @@
+{
+  "categories": [
+    {
+      "_id": "68c13cbe79030c79b3be42a0",
+      "name": "Laptops",
+      "description": "Laptop, máy tính xách tay",
+      "imageUrl": "https://example.com/images/laptops.jpg"
+    },
+    {
+      "_id": "68c238afd4f800c0b623385d",
+      "name": "Thời trang",
+      "description": "Quần áo, giày dép, phụ kiện thời trang",
+      "imageUrl": "https://example.com/images/fashion.jpg"
+    },
+    {
+      "_id": "68c238afd4f800c0b623385e",
+      "name": "Điện tử",
+      "description": "Điện thoại, laptop, máy tính bảng",
+      "imageUrl": "https://example.com/images/electronics.jpg"
+    },
+    {
+      "_id": "68c238afd4f800c0b623385f",
+      "name": "Mỹ phẩm",
+      "description": "Son môi, kem dưỡng da, mỹ phẩm trang điểm",
+      "imageUrl": "https://example.com/images/cosmetics.jpg"
+    },
+    {
+      "_id": "68c238afd4f800c0b6233860",
+      "name": "Đồng hồ",
+      "description": "Đồng hồ đeo tay, đồng hồ treo tường",
+      "imageUrl": "https://example.com/images/watches.jpg"
+    },
+    {
+      "_id": "68c238afd4f800c0b6233861",
+      "name": "Đồ chơi",
+      "description": "Đồ chơi trẻ em, đồ chơi giáo dục",
+      "imageUrl": "https://example.com/images/toys.jpg"
+    }
+  ],
+  "products": [
+    {
+      "name": "Áo thun nam cao cấp",
+      "description": "Áo thun nam chất liệu cotton 100%, thoáng mát, dễ giặt",
+      "price": 299000,
+      "compareAtPrice": 399000,
+      "images": [
+        "https://example.com/images/ao-thun-nam-1.jpg",
+        "https://example.com/images/ao-thun-nam-2.jpg"
+      ],
+      "category": "68c238afd4f800c0b623385d",
+      "brand": "Fashion Brand",
+      "sku": "ATN001",
+      "quantity": 50,
+      "attributes": [
+        {
+          "name": "Chất liệu",
+          "value": "Cotton 100%"
+        },
+        {
+          "name": "Xuất xứ",
+          "value": "Việt Nam"
+        }
+      ],
+      "variants": [
+        {
+          "sku": "ATN001-S-M",
+          "attributes": [
+            {
+              "name": "Size",
+              "value": "S"
+            },
+            {
+              "name": "Màu sắc",
+              "value": "Trắng"
+            }
+          ],
+          "price": 299000,
+          "quantity": 20,
+          "images": [
+            "https://example.com/images/ao-thun-s-trang.jpg"
+          ]
+        },
+        {
+          "sku": "ATN001-M-X",
+          "attributes": [
+            {
+              "name": "Size",
+              "value": "M"
+            },
+            {
+              "name": "Màu sắc",
+              "value": "Xanh"
+            }
+          ],
+          "price": 299000,
+          "quantity": 15,
+          "images": [
+            "https://example.com/images/ao-thun-m-xanh.jpg"
+          ]
+        },
+        {
+          "sku": "ATN001-L-D",
+          "attributes": [
+            {
+              "name": "Size",
+              "value": "L"
+            },
+            {
+              "name": "Màu sắc",
+              "value": "Đỏ"
+            }
+          ],
+          "price": 299000,
+          "quantity": 15,
+          "images": [
+            "https://example.com/images/ao-thun-l-do.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "iPhone 15 Pro Max",
+      "description": "iPhone 15 Pro Max với chip A17 Pro, camera 48MP, pin lâu dài",
+      "price": 29990000,
+      "compareAtPrice": 32990000,
+      "images": [
+        "https://example.com/images/iphone-15-pro-max-1.jpg",
+        "https://example.com/images/iphone-15-pro-max-2.jpg"
+      ],
+      "category": "68c238afd4f800c0b623385e",
+      "brand": "Apple",
+      "sku": "IP15PM001",
+      "quantity": 30,
+      "attributes": [
+        {
+          "name": "Hệ điều hành",
+          "value": "iOS 17"
+        },
+        {
+          "name": "Chip xử lý",
+          "value": "A17 Pro"
+        }
+      ],
+      "variants": [
+        {
+          "sku": "IP15PM001-128-TN",
+          "attributes": [
+            {
+              "name": "Dung lượng",
+              "value": "128GB"
+            },
+            {
+              "name": "Màu sắc",
+              "value": "Titanium Tự nhiên"
+            }
+          ],
+          "price": 29990000,
+          "quantity": 10,
+          "images": [
+            "https://example.com/images/iphone-15-pro-max-128-titanium.jpg"
+          ]
+        },
+        {
+          "sku": "IP15PM001-256-TB",
+          "attributes": [
+            {
+              "name": "Dung lượng",
+              "value": "256GB"
+            },
+            {
+              "name": "Màu sắc",
+              "value": "Titanium Xanh"
+            }
+          ],
+          "price": 32990000,
+          "quantity": 10,
+          "images": [
+            "https://example.com/images/iphone-15-pro-max-256-titanium-blue.jpg"
+          ]
+        },
+        {
+          "sku": "IP15PM001-512-TT",
+          "attributes": [
+            {
+              "name": "Dung lượng",
+              "value": "512GB"
+            },
+            {
+              "name": "Màu sắc",
+              "value": "Titanium Trắng"
+            }
+          ],
+          "price": 36990000,
+          "quantity": 10,
+          "images": [
+            "https://example.com/images/iphone-15-pro-max-512-titanium-white.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Giày thể thao Nike Air Max",
+      "description": "Giày thể thao Nike Air Max với công nghệ Air Max, êm ái và bền bỉ",
+      "price": 2500000,
+      "compareAtPrice": 3000000,
+      "images": [
+        "https://example.com/images/nike-air-max-1.jpg",
+        "https://example.com/images/nike-air-max-2.jpg"
+      ],
+      "category": "68c238afd4f800c0b623385d",
+      "brand": "Nike",
+      "sku": "NAM001",
+      "quantity": 40,
+      "attributes": [
+        {
+          "name": "Công nghệ",
+          "value": "Air Max"
+        },
+        {
+          "name": "Loại giày",
+          "value": "Thể thao"
+        }
+      ],
+      "variants": [
+        {
+          "sku": "NAM001-40-T",
+          "attributes": [
+            {
+              "name": "Size",
+              "value": "40"
+            },
+            {
+              "name": "Màu sắc",
+              "value": "Trắng"
+            }
+          ],
+          "price": 2500000,
+          "quantity": 10,
+          "images": [
+            "https://example.com/images/nike-air-max-40-trang.jpg"
+          ]
+        },
+        {
+          "sku": "NAM001-41-D",
+          "attributes": [
+            {
+              "name": "Size",
+              "value": "41"
+            },
+            {
+              "name": "Màu sắc",
+              "value": "Đen"
+            }
+          ],
+          "price": 2500000,
+          "quantity": 10,
+          "images": [
+            "https://example.com/images/nike-air-max-41-den.jpg"
+          ]
+        },
+        {
+          "sku": "NAM001-42-X",
+          "attributes": [
+            {
+              "name": "Size",
+              "value": "42"
+            },
+            {
+              "name": "Màu sắc",
+              "value": "Xanh"
+            }
+          ],
+          "price": 2500000,
+          "quantity": 10,
+          "images": [
+            "https://example.com/images/nike-air-max-42-xanh.jpg"
+          ]
+        },
+        {
+          "sku": "NAM001-43-D",
+          "attributes": [
+            {
+              "name": "Size",
+              "value": "43"
+            },
+            {
+              "name": "Màu sắc",
+              "value": "Đỏ"
+            }
+          ],
+          "price": 2500000,
+          "quantity": 10,
+          "images": [
+            "https://example.com/images/nike-air-max-43-do.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Laptop Dell XPS 13",
+      "description": "Laptop Dell XPS 13 với màn hình 13.3 inch, chip Intel Core i7, RAM 16GB",
+      "price": 25000000,
+      "compareAtPrice": 28000000,
+      "images": [
+        "https://example.com/images/dell-xps-13-1.jpg",
+        "https://example.com/images/dell-xps-13-2.jpg"
+      ],
+      "category": "68c13cbe79030c79b3be42a0",
+      "brand": "Dell",
+      "sku": "DXPS13001",
+      "quantity": 20,
+      "attributes": [
+        {
+          "name": "Màn hình",
+          "value": "13.3 inch"
+        },
+        {
+          "name": "Hệ điều hành",
+          "value": "Windows 11"
+        }
+      ],
+      "variants": [
+        {
+          "sku": "DXPS13001-16-512",
+          "attributes": [
+            {
+              "name": "RAM",
+              "value": "16GB"
+            },
+            {
+              "name": "Ổ cứng",
+              "value": "512GB SSD"
+            }
+          ],
+          "price": 25000000,
+          "quantity": 10,
+          "images": [
+            "https://example.com/images/dell-xps-13-16-512.jpg"
+          ]
+        },
+        {
+          "sku": "DXPS13001-32-1TB",
+          "attributes": [
+            {
+              "name": "RAM",
+              "value": "32GB"
+            },
+            {
+              "name": "Ổ cứng",
+              "value": "1TB SSD"
+            }
+          ],
+          "price": 30000000,
+          "quantity": 10,
+          "images": [
+            "https://example.com/images/dell-xps-13-32-1tb.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Laptop MacBook Pro 14 inch",
+      "description": "MacBook Pro 14 inch với chip M3 Pro, màn hình Liquid Retina XDR",
+      "price": 45000000,
+      "compareAtPrice": 48000000,
+      "images": [
+        "https://example.com/images/macbook-pro-14-1.jpg",
+        "https://example.com/images/macbook-pro-14-2.jpg"
+      ],
+      "category": "68c13cbe79030c79b3be42a0",
+      "brand": "Apple",
+      "sku": "MBP14001",
+      "quantity": 15,
+      "attributes": [
+        {
+          "name": "Chip xử lý",
+          "value": "M3 Pro"
+        },
+        {
+          "name": "Màn hình",
+          "value": "14.2 inch Liquid Retina XDR"
+        }
+      ],
+      "variants": [
+        {
+          "sku": "MBP14001-18-512",
+          "attributes": [
+            {
+              "name": "RAM",
+              "value": "18GB"
+            },
+            {
+              "name": "Ổ cứng",
+              "value": "512GB SSD"
+            }
+          ],
+          "price": 45000000,
+          "quantity": 8,
+          "images": [
+            "https://example.com/images/macbook-pro-14-18-512.jpg"
+          ]
+        },
+        {
+          "sku": "MBP14001-18-1TB",
+          "attributes": [
+            {
+              "name": "RAM",
+              "value": "18GB"
+            },
+            {
+              "name": "Ổ cứng",
+              "value": "1TB SSD"
+            }
+          ],
+          "price": 50000000,
+          "quantity": 7,
+          "images": [
+            "https://example.com/images/macbook-pro-14-18-1tb.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Son môi cao cấp",
+      "description": "Son môi cao cấp với công thức dưỡng ẩm, màu sắc bền lâu",
+      "price": 350000,
+      "compareAtPrice": 450000,
+      "images": [
+        "https://example.com/images/son-moi-1.jpg",
+        "https://example.com/images/son-moi-2.jpg"
+      ],
+      "category": "68c238afd4f800c0b623385f",
+      "brand": "Beauty Brand",
+      "sku": "SM001",
+      "quantity": 100,
+      "attributes": [
+        {
+          "name": "Loại da",
+          "value": "Mọi loại da"
+        },
+        {
+          "name": "Thành phần",
+          "value": "Vitamin E, Collagen"
+        }
+      ],
+      "variants": [
+        {
+          "sku": "SM001-DA-TD",
+          "attributes": [
+            {
+              "name": "Màu sắc",
+              "value": "Đỏ anh đào"
+            },
+            {
+              "name": "Loại da",
+              "value": "Da thường"
+            }
+          ],
+          "price": 350000,
+          "quantity": 25,
+          "images": [
+            "https://example.com/images/son-moi-da-trang-do-anh-dao.jpg"
+          ]
+        },
+        {
+          "sku": "SM001-DK-TH",
+          "attributes": [
+            {
+              "name": "Màu sắc",
+              "value": "Hồng thủy"
+            },
+            {
+              "name": "Loại da",
+              "value": "Da khô"
+            }
+          ],
+          "price": 350000,
+          "quantity": 25,
+          "images": [
+            "https://example.com/images/son-moi-da-kho-hong-thuy.jpg"
+          ]
+        },
+        {
+          "sku": "SM001-DN-TC",
+          "attributes": [
+            {
+              "name": "Màu sắc",
+              "value": "Cam tươi"
+            },
+            {
+              "name": "Loại da",
+              "value": "Da nhờn"
+            }
+          ],
+          "price": 350000,
+          "quantity": 25,
+          "images": [
+            "https://example.com/images/son-moi-da-nhon-cam-tuoi.jpg"
+          ]
+        },
+        {
+          "sku": "SM001-DN-TN",
+          "attributes": [
+            {
+              "name": "Màu sắc",
+              "value": "Nude tự nhiên"
+            },
+            {
+              "name": "Loại da",
+              "value": "Da nhạy cảm"
+            }
+          ],
+          "price": 350000,
+          "quantity": 25,
+          "images": [
+            "https://example.com/images/son-moi-da-nhay-cam-nude.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Kem dưỡng da ban đêm",
+      "description": "Kem dưỡng da ban đêm với retinol, giúp tái tạo da trong khi ngủ",
+      "price": 500000,
+      "compareAtPrice": 650000,
+      "images": [
+        "https://example.com/images/kem-duong-da-1.jpg",
+        "https://example.com/images/kem-duong-da-2.jpg"
+      ],
+      "category": "68c238afd4f800c0b623385f",
+      "brand": "Skincare Brand",
+      "sku": "KDD001",
+      "quantity": 80,
+      "attributes": [
+        {
+          "name": "Thành phần chính",
+          "value": "Retinol, Hyaluronic Acid"
+        },
+        {
+          "name": "Thời gian sử dụng",
+          "value": "Ban đêm"
+        }
+      ],
+      "variants": [
+        {
+          "sku": "KDD001-DT-30",
+          "attributes": [
+            {
+              "name": "Loại da",
+              "value": "Da thường"
+            },
+            {
+              "name": "Dung tích",
+              "value": "30ml"
+            }
+          ],
+          "price": 500000,
+          "quantity": 20,
+          "images": [
+            "https://example.com/images/kem-duong-da-thuong-30ml.jpg"
+          ]
+        },
+        {
+          "sku": "KDD001-DK-50",
+          "attributes": [
+            {
+              "name": "Loại da",
+              "value": "Da khô"
+            },
+            {
+              "name": "Dung tích",
+              "value": "50ml"
+            }
+          ],
+          "price": 750000,
+          "quantity": 20,
+          "images": [
+            "https://example.com/images/kem-duong-da-kho-50ml.jpg"
+          ]
+        },
+        {
+          "sku": "KDD001-DN-30",
+          "attributes": [
+            {
+              "name": "Loại da",
+              "value": "Da nhờn"
+            },
+            {
+              "name": "Dung tích",
+              "value": "30ml"
+            }
+          ],
+          "price": 500000,
+          "quantity": 20,
+          "images": [
+            "https://example.com/images/kem-duong-da-nhon-30ml.jpg"
+          ]
+        },
+        {
+          "sku": "KDD001-DN-50",
+          "attributes": [
+            {
+              "name": "Loại da",
+              "value": "Da nhạy cảm"
+            },
+            {
+              "name": "Dung tích",
+              "value": "50ml"
+            }
+          ],
+          "price": 750000,
+          "quantity": 20,
+          "images": [
+            "https://example.com/images/kem-duong-da-nhay-cam-50ml.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Đồng hồ Rolex Submariner",
+      "description": "Đồng hồ Rolex Submariner chính hãng, chống nước 300m, dây đeo Oyster",
+      "price": 150000000,
+      "compareAtPrice": 180000000,
+      "images": [
+        "https://example.com/images/rolex-submariner-1.jpg",
+        "https://example.com/images/rolex-submariner-2.jpg"
+      ],
+      "category": "68c238afd4f800c0b6233860",
+      "brand": "Rolex",
+      "sku": "RS001",
+      "quantity": 5,
+      "attributes": [
+        {
+          "name": "Chống nước",
+          "value": "300m"
+        },
+        {
+          "name": "Loại máy",
+          "value": "Automatic"
+        }
+      ],
+      "variants": [
+        {
+          "sku": "RS001-TH-V",
+          "attributes": [
+            {
+              "name": "Màu sắc",
+              "value": "Vàng"
+            },
+            {
+              "name": "Chất liệu",
+              "value": "Thép không gỉ"
+            }
+          ],
+          "price": 150000000,
+          "quantity": 2,
+          "images": [
+            "https://example.com/images/rolex-submariner-thep-vang.jpg"
+          ]
+        },
+        {
+          "sku": "RS001-TH-D",
+          "attributes": [
+            {
+              "name": "Màu sắc",
+              "value": "Đen"
+            },
+            {
+              "name": "Chất liệu",
+              "value": "Thép không gỉ"
+            }
+          ],
+          "price": 150000000,
+          "quantity": 2,
+          "images": [
+            "https://example.com/images/rolex-submariner-thep-den.jpg"
+          ]
+        },
+        {
+          "sku": "RS001-V-2T",
+          "attributes": [
+            {
+              "name": "Màu sắc",
+              "value": "Vàng 2 tông"
+            },
+            {
+              "name": "Chất liệu",
+              "value": "Vàng 18k"
+            }
+          ],
+          "price": 200000000,
+          "quantity": 1,
+          "images": [
+            "https://example.com/images/rolex-submariner-vang-2-tong.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Đồng hồ Omega Seamaster",
+      "description": "Đồng hồ Omega Seamaster với máy Co-Axial, chống nước 300m",
+      "price": 80000000,
+      "compareAtPrice": 95000000,
+      "images": [
+        "https://example.com/images/omega-seamaster-1.jpg",
+        "https://example.com/images/omega-seamaster-2.jpg"
+      ],
+      "category": "68c238afd4f800c0b6233860",
+      "brand": "Omega",
+      "sku": "OS001",
+      "quantity": 8,
+      "attributes": [
+        {
+          "name": "Máy đồng hồ",
+          "value": "Co-Axial Master Chronometer"
+        },
+        {
+          "name": "Chống nước",
+          "value": "300m"
+        }
+      ],
+      "variants": [
+        {
+          "sku": "OS001-TH-X",
+          "attributes": [
+            {
+              "name": "Màu sắc",
+              "value": "Xanh"
+            },
+            {
+              "name": "Chất liệu",
+              "value": "Thép không gỉ"
+            }
+          ],
+          "price": 80000000,
+          "quantity": 3,
+          "images": [
+            "https://example.com/images/omega-seamaster-thep-xanh.jpg"
+          ]
+        },
+        {
+          "sku": "OS001-TH-D",
+          "attributes": [
+            {
+              "name": "Màu sắc",
+              "value": "Đen"
+            },
+            {
+              "name": "Chất liệu",
+              "value": "Thép không gỉ"
+            }
+          ],
+          "price": 80000000,
+          "quantity": 3,
+          "images": [
+            "https://example.com/images/omega-seamaster-thep-den.jpg"
+          ]
+        },
+        {
+          "sku": "OS001-TH-T",
+          "attributes": [
+            {
+              "name": "Màu sắc",
+              "value": "Trắng"
+            },
+            {
+              "name": "Chất liệu",
+              "value": "Thép không gỉ"
+            }
+          ],
+          "price": 80000000,
+          "quantity": 2,
+          "images": [
+            "https://example.com/images/omega-seamaster-thep-trang.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Bộ đồ chơi LEGO Creator",
+      "description": "Bộ đồ chơi LEGO Creator với 1000+ mảnh ghép, phát triển tư duy sáng tạo",
+      "price": 1200000,
+      "compareAtPrice": 1500000,
+      "images": [
+        "https://example.com/images/lego-creator-1.jpg",
+        "https://example.com/images/lego-creator-2.jpg"
+      ],
+      "category": "68c238afd4f800c0b6233861",
+      "brand": "LEGO",
+      "sku": "LC001",
+      "quantity": 60,
+      "attributes": [
+        {
+          "name": "Độ tuổi",
+          "value": "8+"
+        },
+        {
+          "name": "Số mảnh",
+          "value": "1000+"
+        }
+      ],
+      "variants": [
+        {
+          "sku": "LC001-XD-1000",
+          "attributes": [
+            {
+              "name": "Chủ đề",
+              "value": "Xe đua"
+            },
+            {
+              "name": "Số mảnh",
+              "value": "1000 mảnh"
+            }
+          ],
+          "price": 1200000,
+          "quantity": 15,
+          "images": [
+            "https://example.com/images/lego-creator-xe-dua-1000.jpg"
+          ]
+        },
+        {
+          "sku": "LC001-NH-1000",
+          "attributes": [
+            {
+              "name": "Chủ đề",
+              "value": "Nhà cửa"
+            },
+            {
+              "name": "Số mảnh",
+              "value": "1000 mảnh"
+            }
+          ],
+          "price": 1200000,
+          "quantity": 15,
+          "images": [
+            "https://example.com/images/lego-creator-nha-cua-1000.jpg"
+          ]
+        },
+        {
+          "sku": "LC001-TT-1500",
+          "attributes": [
+            {
+              "name": "Chủ đề",
+              "value": "Tàu thuyền"
+            },
+            {
+              "name": "Số mảnh",
+              "value": "1500 mảnh"
+            }
+          ],
+          "price": 1500000,
+          "quantity": 15,
+          "images": [
+            "https://example.com/images/lego-creator-tau-thuyen-1500.jpg"
+          ]
+        },
+        {
+          "sku": "LC001-MT-1500",
+          "attributes": [
+            {
+              "name": "Chủ đề",
+              "value": "Máy bay"
+            },
+            {
+              "name": "Số mảnh",
+              "value": "1500 mảnh"
+            }
+          ],
+          "price": 1500000,
+          "quantity": 15,
+          "images": [
+            "https://example.com/images/lego-creator-may-bay-1500.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Robot đồ chơi thông minh",
+      "description": "Robot đồ chơi thông minh có thể lập trình, điều khiển bằng smartphone",
+      "price": 2500000,
+      "compareAtPrice": 3000000,
+      "images": [
+        "https://example.com/images/robot-toy-1.jpg",
+        "https://example.com/images/robot-toy-2.jpg"
+      ],
+      "category": "68c238afd4f800c0b6233861",
+      "brand": "TechToy",
+      "sku": "RT001",
+      "quantity": 40,
+      "attributes": [
+        {
+          "name": "Độ tuổi",
+          "value": "6+"
+        },
+        {
+          "name": "Kết nối",
+          "value": "Bluetooth, WiFi"
+        }
+      ],
+      "variants": [
+        {
+          "sku": "RT001-X-1",
+          "attributes": [
+            {
+              "name": "Màu sắc",
+              "value": "Xanh"
+            },
+            {
+              "name": "Phiên bản",
+              "value": "Cơ bản"
+            }
+          ],
+          "price": 2500000,
+          "quantity": 10,
+          "images": [
+            "https://example.com/images/robot-toy-xanh-co-ban.jpg"
+          ]
+        },
+        {
+          "sku": "RT001-D-1",
+          "attributes": [
+            {
+              "name": "Màu sắc",
+              "value": "Đỏ"
+            },
+            {
+              "name": "Phiên bản",
+              "value": "Cơ bản"
+            }
+          ],
+          "price": 2500000,
+          "quantity": 10,
+          "images": [
+            "https://example.com/images/robot-toy-do-co-ban.jpg"
+          ]
+        },
+        {
+          "sku": "RT001-T-2",
+          "attributes": [
+            {
+              "name": "Màu sắc",
+              "value": "Trắng"
+            },
+            {
+              "name": "Phiên bản",
+              "value": "Nâng cao"
+            }
+          ],
+          "price": 3000000,
+          "quantity": 10,
+          "images": [
+            "https://example.com/images/robot-toy-trang-nang-cao.jpg"
+          ]
+        },
+        {
+          "sku": "RT001-D-2",
+          "attributes": [
+            {
+              "name": "Màu sắc",
+              "value": "Đen"
+            },
+            {
+              "name": "Phiên bản",
+              "value": "Nâng cao"
+            }
+          ],
+          "price": 3000000,
+          "quantity": 10,
+          "images": [
+            "https://example.com/images/robot-toy-den-nang-cao.jpg"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sản phẩm đơn giản không có variant",
+      "description": "Sản phẩm đơn giản không có biến thể, chỉ có sản phẩm chính",
+      "price": 100000,
+      "compareAtPrice": 150000,
+      "images": [
+        "https://example.com/images/san-pham-don-gian-1.jpg"
+      ],
+      "category": "68c238afd4f800c0b623385d",
+      "brand": "Simple Brand",
+      "sku": "SPDG001",
+      "quantity": 100,
+      "attributes": [
+        {
+          "name": "Loại",
+          "value": "Cơ bản"
+        }
+      ]
+    },
+    {
+      "name": "Sản phẩm số lượng lớn",
+      "description": "Sản phẩm có số lượng tồn kho lớn để test đơn hàng số lượng nhiều",
+      "price": 50000,
+      "images": [
+        "https://example.com/images/san-pham-so-luong-lon-1.jpg"
+      ],
+      "category": "68c238afd4f800c0b623385d",
+      "brand": "Bulk Brand",
+      "sku": "SPSL001",
+      "quantity": 1000,
+      "attributes": [
+        {
+          "name": "Loại",
+          "value": "Số lượng lớn"
+        }
+      ]
+    }
+  ]
+}

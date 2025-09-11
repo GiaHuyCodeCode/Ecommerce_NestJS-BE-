@@ -39,7 +39,8 @@ export class OrdersService {
       let variant: any = null;
         
       if (item.variantId) {  
-        variant = product.variants.find(v => (v as any)._id.toString() === item.variantId);  
+        // Tìm biến thể (variant) trong mảng variants của sản phẩm có _id trùng với item.variantId
+        variant = product.variants.find(v => (v as any)._id.toString() === item.variantId);
         if (!variant) {  
           throw new NotFoundException(`Variant with ID "${item.variantId}" not found`);  
         }  

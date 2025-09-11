@@ -48,6 +48,8 @@ export class OrderItemDto {
 }  
 
 export class CreateOrderDto {  
+  // Sử dụng @ValidateNested({ each: true }) để đảm bảo mỗi phần tử trong mảng items
+  // đều được kiểm tra (validate) theo các quy tắc của OrderItemDto.
   @ValidateNested({ each: true })  
   @Type(() => OrderItemDto)  
   // Danh sách các sản phẩm trong đơn hàng, mỗi phần tử phải là OrderItemDto  
